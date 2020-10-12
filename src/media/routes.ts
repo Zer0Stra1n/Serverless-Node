@@ -1,4 +1,3 @@
-'use strict';
 import { Router } from 'express';
 import fakeData from './movie_fake.json';
 
