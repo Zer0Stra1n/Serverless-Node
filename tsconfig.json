@@ -1,14 +1,22 @@
 {
     "compilerOptions": {
-      "preserveConstEnums": true,
-      "strictNullChecks": true,
-      "sourceMap": true,
-      "allowJs": true,
-      "target": "es5",
-      "outDir": ".build",
+      "alwaysStrict": true,
       "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "lib": [
+        "es2019",
+        "dom"
+      ],
+      "module": "CommonJS",
       "moduleResolution": "node",
-      "lib": ["es2015"],
-      "rootDir": "./"
+      "noUnusedLocals": true,
+      "outDir": ".build",
+      "preserveConstEnums": true,
+      "removeComments": true,
+      "resolveJsonModule": true,
+      "rootDir": "./",
+      "sourceMap": true,
+      "strictNullChecks": true,
+      "target": "es2019"
     }
   }
