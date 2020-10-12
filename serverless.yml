@@ -29,6 +29,7 @@ provider:
 #  region: us-east-1
 
 plugins:
+  - serverless-plugin-typescript
   - serverless-offline
 
 custom:
