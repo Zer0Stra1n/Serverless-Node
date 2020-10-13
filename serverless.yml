@@ -23,6 +23,10 @@ frameworkVersion: '2.6.0'
 provider:
   name: aws
   runtime: nodejs12.x
+  apiGateway:
+    minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
 
 # you can overwrite defaults here
 #  stage: dev
