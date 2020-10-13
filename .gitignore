@@ -1,3 +1,9 @@
+# Dependencies
 node_modules
+
+# Built Dirs
 .build
 test
+
+# Serverless directories
+.serverless
