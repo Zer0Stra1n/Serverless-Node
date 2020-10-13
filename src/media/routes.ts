@@ -1,12 +1,15 @@
 import { Router } from 'express';
-import fakeData from './movie_fake.json';
+import { MediaService } from './media.service';
+
+const mediaService = new MediaService()
 
 const routes = Router({
     mergeParams: true
 });
 
 routes.get('/', (req, res) => {
-    res.status(200).json(fakeData);
+    const data  = mediaService.getFakeData()
+    res.status(200).json(data);
 });
 
 export default routes;

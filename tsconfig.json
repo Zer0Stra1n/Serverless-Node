@@ -1,22 +1,22 @@
 {
-    "compilerOptions": {
-      "alwaysStrict": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "lib": [
-        "es2019",
-        "dom"
-      ],
-      "module": "CommonJS",
-      "moduleResolution": "node",
-      "noUnusedLocals": true,
-      "outDir": ".build",
-      "preserveConstEnums": true,
-      "removeComments": true,
-      "resolveJsonModule": true,
-      "rootDir": "./",
-      "sourceMap": true,
-      "strictNullChecks": true,
-      "target": "es2019"
-    }
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "es2019",
+      "dom"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "outDir": ".build",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es2019"
   }
+}
