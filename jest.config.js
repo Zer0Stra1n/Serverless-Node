@@ -24,6 +24,11 @@ module.exports = {
       'js'
     ],
     roots: [SRC_PATH],
+    globals: {
+      'ts-jest': {
+        tsConfig: 'tsconfig.spec.json'
+      }
+    },
     reporters: ['default', ['jest-junit', {outputDirectory: 'test/coverage/junit', outputName: 'test.xml'}]],
     transform: {
       '^.+\\.(ts|js)$': 'ts-jest',

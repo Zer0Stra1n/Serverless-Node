@@ -18,5 +18,11 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "target": "es2019"
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
+  ]
 }
