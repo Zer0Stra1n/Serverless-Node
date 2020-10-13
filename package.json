@@ -4,7 +4,8 @@
   "description": "Lambda Serverless app",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --ext 'js,jsx,ts,tsx' ./src/*"
   },
   "author": "Seth Sandor",
   "license": "MIT",
