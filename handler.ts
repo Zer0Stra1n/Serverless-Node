@@ -1,6 +1,6 @@
 import app from './src/main';
 import serverlessHttp from 'serverless-http';
-import connection from './connection';
+import connection from './src/connection';
 
 connection.getDBConnection();
 

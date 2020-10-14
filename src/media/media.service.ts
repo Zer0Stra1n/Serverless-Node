@@ -1,4 +1,4 @@
-import connection from '../../connection';
+import connection from '../connection';
 
 /**
  * Class used to retrieve media information
@@ -12,7 +12,7 @@ export default class MediaService {
   async getMovieList() {
     let data;
     try {
-      data = this.db.query('select id, title, poster from movies');
+      data = await this.db.query('select id, title, poster from movies');
     } catch (e) { 
       throw e;
     }

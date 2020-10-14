@@ -7,7 +7,7 @@ const routes = router({
   mergeParams: true,
 });
 
-routes.get('/', async (req, res) => {
+routes.get('/', async(req, res) => {
   let data;
   try {
     data = await mediaService.getMovieList();
