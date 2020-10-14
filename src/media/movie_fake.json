@@ -529,7 +529,7 @@
 			"production": "3 Arts Entertainment"
 		},
 		{
-			"Id": "vi1441049625",
+			"id": "vi1441049625",
 			"title": "Guardians of the Galaxy",
 			"vintage": "2014",
 			"rated": "PG-13",
@@ -543,7 +543,7 @@
 			"language": "English",
 			"country": "USA",
 			"awards": "Nominated for 2 Oscars. Another 52 wins & 100 nominations.",
-			"Trailer": "https://www.youtube.com/embed/d96cjJhvlMA",
+			"trailer": "https://www.youtube.com/embed/d96cjJhvlMA",
 			"poster": "https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_SX300.jpg",
 			"ratings": [{
 					"source": "Internet Movie Database",
