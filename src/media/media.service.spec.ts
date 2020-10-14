@@ -6,7 +6,7 @@ describe('MediaService', () => {
 
   describe('getFakeData', () => {
     it('should return the fake data from JSON', () => {
-      const result = service.getFakeData();
+      const result = service.getMovieList();
       expect(result).toEqual(fakeData);
     });
   });

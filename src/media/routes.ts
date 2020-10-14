@@ -7,9 +7,14 @@ const routes = router({
   mergeParams: true,
 });
 
-routes.get('/', (req, res) => {
-  const data = mediaService.getFakeData();
-  res.status(200).json(data);
+routes.get('/', async (req, res) => {
+  let data;
+  try {
+    data = await mediaService.getMovieList();
+  } catch (e){
+    return res.status(500).json(e);
+  }
+  return res.status(200).json(data.records);
 });
 
 export default routes;
