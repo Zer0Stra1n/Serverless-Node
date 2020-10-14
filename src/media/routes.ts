@@ -17,4 +17,13 @@ routes.get('/', async(req, res) => {
   return res.status(200).json(data);
 });
 
+// routes.get('/pop', async(req, res) => {
+//   try {
+//     await mediaService.populateMovies();
+//   } catch (e){
+
+//   }
+//   return res.status(200).json({status: 'done'})
+// });
+
 export default routes;
