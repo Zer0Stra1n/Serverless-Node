@@ -17,6 +17,6 @@ export default class MediaService {
       throw e;
     }
 
-    return data;
+    return data.records;
   }
 }

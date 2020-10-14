@@ -14,7 +14,7 @@ routes.get('/', async(req, res) => {
   } catch (e){
     return res.status(500).json(e);
   }
-  return res.status(200).json(data.records);
+  return res.status(200).json(data);
 });
 
 export default routes;
