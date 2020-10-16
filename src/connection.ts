@@ -20,5 +20,4 @@ class DBConnection {
 }
 
 // exporting this way allows Node to use this as a singleton
-export default new DBConnection();
-
+export default process.env.TEST ? DBConnection : new DBConnection();
