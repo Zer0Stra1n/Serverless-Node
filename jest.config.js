@@ -1,5 +1,3 @@
-const SRC_PATH = '<rootDir>/src';
-
 module.exports = {
   clearMocks: true,
   collectCoverage: true,
@@ -23,7 +21,7 @@ module.exports = {
     'json',
     'js',
   ],
-  roots: [SRC_PATH],
+  roots: ['<rootDir>/src'],
   globals: {
     'ts-jest': {
       tsConfig: 'tsconfig.spec.json',
