@@ -5,7 +5,7 @@ import connection from '../connection';
  * Class used to retrieve media information
  */
 export default class MediaService {
-  db = connection.getDBConnection();
+  db = connection.dbConnection;
   /**
    * Fetchs fake data from the JSON file
    * @return {Array} Movie Json - An array of movie info
