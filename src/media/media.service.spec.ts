@@ -1,4 +1,5 @@
 import MediaService from './media.service';
+import {DBFake} from '../../config/test-constants';
 
 describe('MediaService', () => {
   const service = new MediaService();
@@ -8,24 +9,13 @@ describe('MediaService', () => {
     id: 'vifacerollkeys1',
   }];
 
-  /** mock DB Connection
-   * @arg {String} arg query of data
-   * @return {Promise} fake data
-  */
-  class DBFake {
-    query = (arg) => {
-      return Promise.resolve({
-        records: fakeRecords,
-      });
-    };
-  }
-
   describe('getMovieList', () => {
     beforeEach(() => {
       service.db = new DBFake();
     });
     it('should return the fake data from JSON', async () => {
-      jest.spyOn(service.db, 'query');
+      service.db.data = fakeRecords;
+
       let result;
 
       try {
