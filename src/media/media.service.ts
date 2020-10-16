@@ -14,7 +14,7 @@ export default class MediaService {
     let data;
     try {
       data = await this.db.query('select id, title, poster from movies');
-    } catch (e) { 
+    } catch (e) {
       throw e;
     }
 
@@ -32,10 +32,12 @@ export default class MediaService {
   //   data.forEach(async(movie:any) => {
   //     movie.ratings = JSON.stringify(movie.ratings);
   //     movie.vintage = parseInt(movie.vintage, 10);
-      
+
   //     try{
+  // eslint-disable-next-line max-len
   //       const inserted = await this.db.query('select * from movies where id = :id', [{id: `${movie.id}`}]);
   //       if (!inserted.records.length){
+  // eslint-disable-next-line max-len
   //         await this.db.query(`insert into movies (${keys.toString()}) values(${updated.toString()})`, movie);
   //       }
   //     } catch (e) {
