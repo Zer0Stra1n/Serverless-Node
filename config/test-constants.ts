@@ -3,7 +3,7 @@
  * Fake DB Connection
  */
 export class DBFake {
-  data = {};
+  data: any;
   /**
    * Fake DB Query
    * @param {String} arg A DB Query
