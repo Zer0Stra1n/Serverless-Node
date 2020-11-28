@@ -21,6 +21,22 @@ export default class MediaService {
     return data.records;
   }
 
+
+  async getMovie(params) {
+    let data;
+    if (params.mediaId){
+      try {
+        data = await this.db.query('select * from movies where id = :id', [{id: `${params.mediaId}`}]);
+      } catch(e) {
+        throw e;
+      }
+    } else {
+      throw new Error('Missing Identifier: Media Id is missing from request');
+    }
+
+    return data.records;
+  }
+
   /**
    * Pushes data into the movies db
    */

@@ -17,6 +17,25 @@ routes.get('/', async (req, res) => {
   return res.status(200).json(data);
 });
 
+routes.get('/:mediaId', async (req, res) => {
+  let data;
+
+  try {
+    data = await mediaService.getMovie(req.params);
+  } catch (e) {
+    if (e.message.includes('Missing Identifier')) {
+      return res.status(400).json(e);
+    }
+    return res.status(500).json(e);
+  }
+  
+  if (!data.length) {
+    data.push({});
+  }
+  
+  return res.status(200).json(data[0]);
+});
+
 // routes.get('/pop', async(req, res) => {
 //   try {
 //     await mediaService.populateMovies();
