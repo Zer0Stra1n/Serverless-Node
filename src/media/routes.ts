@@ -29,11 +29,7 @@ routes.get('/:mediaId', async (req, res) => {
     return res.status(500).json(e);
   }
   
-  if (!data.length) {
-    data.push({});
-  }
-  
-  return res.status(200).json(data[0]);
+  return res.status(200).json(data);
 });
 
 // routes.get('/pop', async(req, res) => {

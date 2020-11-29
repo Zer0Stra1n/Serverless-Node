@@ -34,7 +34,14 @@ export default class MediaService {
       throw new Error('Missing Identifier: Media Id is missing from request');
     }
 
-    return data.records;
+    if (data.records.length){
+      data = data.records[0]
+      data.ratings = JSON.parse(data.ratings);
+    } else {
+      data = {};
+    }
+
+    return data;
   }
 
   /**
